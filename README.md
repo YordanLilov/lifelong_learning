@@ -7,11 +7,9 @@ To soft stop the already started Q&A check with displaying a report, type "exit!
 To shuffle the Q&A in file to read Q&A from, pass "r" as a second argument after the name of the file, separated by a space.
 
 Load a file with questions and answers 
-===========================
 Part of the pre-checks: 
 Questions and answers in a file to be loaded have to be separated with a colon  ":"  ex. questions on the left side, answers on right side of the : 
 No more than one ":" allowed per line - this will be the delimiter between questions and answers
-===========================
 If there are multiple answers, they have to be separated by semi-colon ;
 The script checks the number of expected answers, the  squequence of provided answers is irrelevant
 For each question you will be notified about the number of expected answers.  

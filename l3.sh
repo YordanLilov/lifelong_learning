@@ -295,6 +295,15 @@ done < obj_parsed_answer
 #echo 'Matches' $num_matches 
 fi
 
+if [[ $await_answer == "exit!" ]]
+then
+echo -e $Cyan'Exit on request'$EOC
+func_recap
+next_dict_loading
+break
+exit
+fi
+
 if [[ $answer_expected =~ ";" ]]
 then 
 
@@ -308,6 +317,8 @@ echo -e $Red'Incorrect' $EOC
 echo $question_asked ':' $answer_expected >> preloaded_word_to_revise_next 
 fi
 else 
+
+
 
 if [[ $await_answer ==  $answer_expected ]] 
 then 
@@ -324,15 +335,9 @@ fi
 counter=$(expr $counter + 1)
 
 #echo 'Counter:' $counter
-if [[ $await_answer == "exit!" ]]
-then
-func_recap
-next_dict_loading
-exit
-fi
 
 ((random_line++))
 #echo $random_line
 done 
-fi 
+#fi 
 echo 

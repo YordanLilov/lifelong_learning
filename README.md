@@ -2,6 +2,7 @@
 A bash &amp; awk script for self-preparation for Exams. Load files with questions and answers for preparation for any exam
 Lifelong Learning script 
 
+Before starting the scripts, format it to unix, just in case , with dos2unix [filename] command.
 To hard stop the script press "Ctrl + C"
 To soft stop the already started Q&A check with displaying a report, type "exit!"
 To shuffle the Q&A in file to read Q&A from, pass "r" as a second argument after the name of the file, separated by a space.
